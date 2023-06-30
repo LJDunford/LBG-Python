@@ -27,7 +27,7 @@ pipeline {
 		}
 		stage('push image') {
 			steps {
-				sh 'docker push eu.gcr.io/lbg-mea-12/python-app:ldunford-v${version}'
+				sh 'docker push eu.gcr.io/lbg-mea-12/lbg-python-ldunford:ldunford-v${version}'
 			}
 		}
 	}
