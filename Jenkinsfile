@@ -1,4 +1,4 @@
-pipeline {
+.pipeline {
 	agent any
 	
 	environment {
@@ -27,7 +27,7 @@ pipeline {
 		}
 		stage('push image') {
 			steps {
-				sh 'docker push gcr.io/lbg-mea-12/python-app:agray-v${version}'
+				sh 'docker push eu.gcr.io/lbg-mea-12/python-app:ldunford-v${version}'
 			}
 		}
 	}
